@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MiniLemon Cafe — Fresh Taste, Fresh Moment. Website profil cafe dengan pengalaman scroll immersive." />
+    <title>MiniLemon Cafe — Fresh Taste, Fresh Moment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Skip link for keyboard/screen-reader users -->
+    <a class="skip-link" href="#hero">Lewati ke konten</a>
+
+    <!-- ============ NAVIGATION ============ -->
+    <header class="site-nav" id="site-nav">
+      <a href="#hero" class="nav-brand">MiniLemon<span>.</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Buka menu navigasi">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-menu" class="nav-menu">
+        <a href="#about" data-nav>Tentang</a>
+        <a href="#menu" data-nav>Menu</a>
+        <a href="#story" data-nav>Cerita Kami</a>
+        <a href="#partnership" data-nav>Kemitraan</a>
+        <a href="#location" data-nav>Lokasi</a>
+        <a href="#contact" data-nav class="nav-cta">Kontak</a>
+      </nav>
+    </header>
+
+    <main id="app">
+      <!-- ============ 1. HERO ============ -->
+      <section id="hero" class="section hero" aria-label="Beranda">
+        <div id="hero-canvas" class="hero-canvas" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow" data-reveal>Cafe &mdash; Surabaya</p>
+          <h1 class="hero-title" data-reveal>
+            <span class="line">MINI</span><span class="line accent">LEMON</span><span class="line">CAFE</span>
+          </h1>
+          <p class="hero-tagline" data-reveal>Fresh Taste, Fresh Moment.</p>
+        </div>
+        <button class="scroll-cue" id="scroll-cue" aria-label="Scroll ke bawah untuk melanjutkan">
+          <span class="scroll-cue-line"></span>
+          <span class="scroll-cue-text">Scroll</span>
+        </button>
+      </section>
+
+      <!-- ============ 2. TENTANG ============ -->
+      <section id="about" class="section about" aria-label="Tentang MiniLemon">
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="eyebrow" data-reveal>Tentang Kami</p>
+            <h2 class="section-title" data-reveal>
+              Setiap gelas punya<br /><em>cerita segar</em> tersendiri.
+            </h2>
+            <p class="body-text" data-reveal>
+              MiniLemon Cafe hadir sebagai ruang santai di tengah kota &mdash; tempat menikmati kopi,
+              racikan lemon segar, dan momen yang terasa personal. Konsep ini menyatukan cita rasa
+              modern dengan suasana yang hangat dan tidak terburu-buru.
+              <span class="placeholder-flag">[Ganti dengan narasi resmi MiniLemon Cafe]</span>
+            </p>
+          </div>
+          <div class="about-visual" data-reveal>
+            <div class="about-visual-frame">
+              <img class="about-visual-img" src="/images/cafe/interior.webp" alt="Suasana interior MiniLemon Cafe" loading="lazy" />
+            </div>
+            <div class="about-visual-deco" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 3. MENU ============ -->
+      <section id="menu" class="section menu" aria-label="Menu">
+        <div class="section-head">
+          <div class="section-head-copy">
+            <p class="eyebrow" data-reveal>Menu</p>
+            <h2 class="section-title" data-reveal>Rasa yang <em>selalu segar</em></h2>
+          </div>
+        </div>
+
+        <div class="menu-stage" data-reveal>
+          <div id="menu-stage-canvas" class="menu-stage-canvas" aria-hidden="true"></div>
+          <p class="menu-stage-caption" id="menu-stage-caption"></p>
+        </div>
+
+        <div class="menu-tabs" id="menu-tabs" role="tablist" aria-label="Kategori menu"></div>
+        <div class="menu-grid" id="menu-grid"></div>
+      </section>
+
+      <!-- ============ 4. CERITA KAMI ============ -->
+      <section id="story" class="section story" aria-label="Cerita Kami">
+        <div class="section-head">
+          <div class="section-head-copy">
+            <p class="eyebrow" data-reveal>Cerita Kami</p>
+            <h2 class="section-title" data-reveal>Perjalanan <em>MiniLemon</em></h2>
+          </div>
+        </div>
+        <div class="timeline" id="timeline">
+          <div class="timeline-line" aria-hidden="true"><div class="timeline-line-fill" id="timeline-fill"></div></div>
+          <ol class="timeline-list" id="timeline-list"></ol>
+        </div>
+      </section>
+
+      <!-- ============ 5. KEMITRAAN ============ -->
+      <section id="partnership" class="section partnership" aria-label="Kemitraan">
+        <div class="partnership-decor partnership-decor-1" aria-hidden="true"></div>
+        <div class="partnership-decor partnership-decor-2" aria-hidden="true"></div>
+        <div class="partnership-inner">
+          <p class="eyebrow eyebrow-light" data-reveal>Kemitraan</p>
+          <h2 class="section-title title-light" data-reveal>Grow Together <em>With MiniLemon</em></h2>
+          <div class="partnership-points" id="partnership-points"></div>
+          <a href="#contact" class="btn btn-primary" data-reveal>Pelajari Kemitraan</a>
+        </div>
+      </section>
+
+      <!-- ============ 6. LOKASI ============ -->
+      <section id="location" class="section location" aria-label="Lokasi">
+        <div class="location-grid">
+          <div class="location-copy">
+            <p class="eyebrow" data-reveal>Lokasi</p>
+            <h2 class="section-title" data-reveal>Temukan kami <em>di sini</em></h2>
+            <p class="body-text" data-reveal id="location-address"></p>
+            <p class="body-text location-hours" data-reveal id="location-hours"></p>
+            <a href="#" id="maps-link" class="btn btn-outline" data-reveal target="_blank" rel="noopener">
+              Buka di Google Maps
+            </a>
+          </div>
+          <div class="location-visual" data-reveal>
+            <div class="location-pin" aria-hidden="true">📍</div>
+            <iframe
+              class="location-map-embed"
+              src="https://www.google.com/maps?q=Minilemon+Ice+Cream+%26+Tea&ll=-7.2813908,112.7094781&z=17&output=embed"
+              title="Peta lokasi MiniLemon Cafe"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 7. KONTAK ============ -->
+      <section id="contact" class="section contact" aria-label="Kontak">
+        <div class="contact-canvas-wrap" aria-hidden="true">
+          <div id="contact-canvas" class="contact-canvas"></div>
+        </div>
+        <div class="contact-inner">
+          <p class="eyebrow eyebrow-light" data-reveal>Kontak</p>
+          <h2 class="section-title title-light" data-reveal>Mari <em>terhubung</em></h2>
+          <div class="contact-grid" id="contact-grid"></div>
+          <p class="contact-footnote">&copy; <span id="year"></span> MiniLemon Cafe. Fresh Taste, Fresh Moment.</p>
+        </div>
+      </section>
+    </main>
+
+    <noscript>
+      <div style="padding:2rem;font-family:sans-serif">
+        Website ini membutuhkan JavaScript untuk menampilkan pengalaman 3D scroll immersive.
+      </div>
+    </noscript>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
